@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
-import HomePage from "./views/HomePage.vue";
+import Home from "./views/Home.vue";
+import AboutUs from "./views/AboutUs.vue";
 import Index from "./views/Index.vue";
 import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
@@ -14,8 +15,17 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "homepage",
-      components: { default: HomePage, header: MainNavbar, footer: MainFooter },
+      name: "home",
+      components: { default: Home, header: MainNavbar, footer: MainFooter },
+      props: {
+        header: { colorOnScroll: 400 },
+        footer: { backgroundColor: "black" }
+      }
+    },
+    {
+      path: "/aboutus",
+      name: "AboutUs",
+      components: { default: AboutUs, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: "black" }
