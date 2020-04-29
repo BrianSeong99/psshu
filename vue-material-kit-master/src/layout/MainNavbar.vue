@@ -8,7 +8,7 @@
   >
     <div class="md-toolbar-row md-collapse-lateral">
       <div class="md-toolbar-section-start">
-        <h3 class="md-title">Vue Material Kit</h3>
+        <h2 class="md-title">Psshu</h2>
       </div>
       <div class="md-toolbar-section-end">
         <md-button
@@ -63,7 +63,7 @@
                 </a>
               </li>
 
-              <md-list-item
+              <!-- <md-list-item
                 href="https://demos.creative-tim.com/vue-material-kit/documentation/"
                 target="_blank"
                 v-if="showDownload"
@@ -79,7 +79,7 @@
               >
                 <i class="material-icons">cloud_download</i>
                 <p>Download</p>
-              </md-list-item>
+              </md-list-item> -->
 
               <li class="md-list-item" v-else>
                 <a
